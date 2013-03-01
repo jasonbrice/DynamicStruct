@@ -38,8 +38,6 @@ The code supplied will create that struct for you in memory, assuming it finds a
 
 What could you use this for? Hmm... 
 
-I use it for a vendor-specific API that requires a struct defining each of the (possibly hundreds) of variables you want to read to/write from their system. 
-Keeping this straight and trying to quickly test the addition/removal of a field or two got unmanageable. 
+I use it for a vendor-specific API that requires a struct defining each of the (possibly hundreds) of variables you want to read to/write from their system. Keeping this straight and trying to quickly test the addition/removal of a field or two got unmanageable. 
 
-But you could pass Windows messages (WM_COPYDATA / Marshal.PtrToStructure...) from one app to another without having to compile each app every time you changed the structure of the data in the message. 
-
+But you could pass Windows messages (WM_COPYDATA / Marshal.PtrToStructure...) from one app to another without having to compile each app every time you changed the structure of the data in the message. (Of course you could do this also with UDP packets sent to/from localhost, or a message bus, or a shared database, or possibly even smoke signals. But that's for another project...)
