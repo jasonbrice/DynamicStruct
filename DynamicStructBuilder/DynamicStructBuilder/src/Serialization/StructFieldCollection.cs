@@ -7,9 +7,8 @@ using System.Xml.Serialization;
 
 namespace DynamicStructBuilder.Serialization
 {
-    /**
-     * This class acts as the "interim" class between 
-     */
+
+    //Provide a Type for GenericSerializable to seriialize/deserialize
     [Serializable()]
     public class StructFieldCollection : GenericSerializable<StructFieldCollection>
     {
@@ -17,13 +16,15 @@ namespace DynamicStructBuilder.Serialization
 
         [XmlArray("DataSet")]
         [XmlArrayItem("StructField", typeof(StructField))]
-        public StructField[] Variables { get; set; }
+        public StructField[] StructFields { get; set; }
 
+        // if you're not using Linq but you want to iterate
+        // through the fields using a foreach loop... 
         public System.Collections.IEnumerator GetEnumerator()
         {
-            for (int i = 0; i < Variables.Length; i++)
+            for (int i = 0; i < StructFields.Length; i++)
             {
-                yield return Variables[i];
+                yield return StructFields[i];
             }
         }
 

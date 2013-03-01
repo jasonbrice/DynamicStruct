@@ -13,7 +13,7 @@ namespace DynamicStructBuilder.Reflection
     {
         private static Type structType;
 
-        // Returns an instance of the struct.
+        // Returns an object instance of the struct.
         public static object GetStructInstance() {
             object ptInstance = Activator.CreateInstance(GetStruct(), new object[] { });
             return ptInstance;
@@ -49,9 +49,10 @@ namespace DynamicStructBuilder.Reflection
 
 
             StructFieldCollection collection = StructFieldCollection.Deserialize();
-            foreach (StructField variable in collection.Variables)
+            foreach (StructField variable in collection.StructFields)
             {
-                FieldBuilder field = structTypeBld.DefineField(variable.Name, Type.GetType(variable.SystemDataType, true) , FieldAttributes.Public);
+                Console.WriteLine("StructField name: " + variable.Name + " DataType: " + variable.DataType);
+                FieldBuilder field = structTypeBld.DefineField(variable.Name, Type.GetType(variable.DataType, true) , FieldAttributes.Public);
             }
 
             // Base class and base class constructor.

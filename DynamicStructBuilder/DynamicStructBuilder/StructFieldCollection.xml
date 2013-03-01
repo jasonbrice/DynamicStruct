@@ -5,15 +5,15 @@
   <DataSet>
     <StructField>
       <Name>Latitude</Name>
-      <SystemDataType>System.Double</SystemDataType>
+      <DataType>System.Double</DataType>
     </StructField>
     <StructField>
       <Name>Longitude</Name>
-      <SystemDataType>System.Double</SystemDataType>
+      <DataType>System.Double</DataType>
     </StructField>
     <StructField>
       <Name>Altitude</Name>
-      <SystemDataType>System.Double</SystemDataType>
+      <DataType>System.Double</DataType>
     </StructField>
   </DataSet>
 </StructFieldCollection>
