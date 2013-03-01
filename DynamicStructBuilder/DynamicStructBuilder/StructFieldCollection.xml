@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Reference implementation... -->
+<!-- If deserialized, will build an in-memory struct with 3 fields of type System.Double -->
+<StructFieldCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataSet>
+    <StructField>
+      <Name>Latitude</Name>
+      <SystemDataType>System.Double</SystemDataType>
+    </StructField>
+    <StructField>
+      <Name>Longitude</Name>
+      <SystemDataType>System.Double</SystemDataType>
+    </StructField>
+    <StructField>
+      <Name>Altitude</Name>
+      <SystemDataType>System.Double</SystemDataType>
+    </StructField>
+  </DataSet>
+</StructFieldCollection>
