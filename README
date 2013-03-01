@@ -1,1 +1,37 @@
-This project contains two MS VS2010 Solutions: a simple class library that will create an XML file from a struct, and a simple WinForms app that uses the library to give GUI feedback.
+This project contains two MS VS2010 Solutions: a simple class library that will create a struct from an XML file, and a simple WinForms app that uses the library to give GUI feedback.
+
+For example, you have a struct in which you won't know the field names or data types until runtime. Let's say you want it to look like this:
+
+using System;
+using System.Runtime.InteropServices;
+
+namespace MyGreatProject
+{
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi, Pack = 1)]
+    struct MyCoolStruct
+    {
+        public System.Double Latitude;
+        public System.Double Longitude;
+        public System.Int32 Altitude;
+    }
+}
+
+The code supplied will create that struct for you in memory, assuming it finds an XML file like this:
+
+<?xml version="1.0" encoding="utf-8"?>
+<StructFieldCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataSet>
+    <StructField>
+      <Name>Latitude</Name>
+      <DataType>System.Double</DataType>
+    </StructField>
+    <StructField>
+      <Name>Longitude</Name>
+      <DataType>System.Double</DataType>
+    </StructField>
+    <StructField>
+      <Name>Altitude</Name>
+      <DataType>System.Int32</DataType>
+    </StructField>
+  </DataSet>
+</StructFieldCollection>

@@ -1,0 +1,6 @@
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\bin\Debug\StructFieldCollection.xml
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\bin\Debug\DynamicStructBuilder.dll
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\bin\Debug\DynamicStructBuilder.pdb
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\obj\Debug\DynamicStructBuilder.csprojResolveAssemblyReference.cache
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\obj\Debug\DynamicStructBuilder.dll
+C:\Users\bricej\repos\DynamicStruct\DynamicStructBuilder\DynamicStructBuilder\obj\Debug\DynamicStructBuilder.pdb
