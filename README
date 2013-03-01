@@ -1,4 +1,4 @@
-This project contains two MS VS2010 Solutions: a simple class library that will create a struct from an XML file, and a simple WinForms app that uses the library to build the struct and tells you if it worked (or not). 
+This project contains two MS VS2010 Solutions: a simple class library that uses reflection to create a struct from an XML file, and a simple WinForms app that uses the library to create the struct in memory and tells you if it worked (or not). 
 
 For example, you have a struct in which you won't know the field names or data types until runtime. Let's say you want it to look like this:
 
