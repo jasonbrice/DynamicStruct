@@ -1,0 +1,1 @@
+This project contains two MS VS2010 Solutions: a simple class library that will create an XML file from a struct, and a simple WinForms app that uses the library to give GUI feedback.
