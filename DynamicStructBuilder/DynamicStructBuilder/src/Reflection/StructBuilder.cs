@@ -45,7 +45,7 @@ namespace DynamicStructBuilder.Reflection
             // Also, subclassing ValueType is key to it behaving as a struct.
             TypeBuilder structTypeBld = structModule.DefineType("DynamicStructBuilder.Reflection.DyanmicStruct", TypeAttributes.Public |
                 TypeAttributes.Sealed | TypeAttributes.SequentialLayout |
-                TypeAttributes.Serializable | TypeAttributes.AnsiClass, typeof(ValueType));
+                TypeAttributes.Serializable | TypeAttributes.AnsiClass, typeof(ValueType), PackingSize.Size1);
 
 
             StructFieldCollection collection = StructFieldCollection.Deserialize();
